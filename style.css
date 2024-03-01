@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+body {
+    background: rgb(41, 41, 41);
+    background: linear-gradient(169deg, rgb(134, 134, 134) 0%, rgba(60,60,60,1) 97%);
+    background-blend-mode: multiply;
+    display: grid;
+    place-items: center;
+    min-block-size: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: none;
+}
+
+
+.cursor-dot {
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    box-shadow: 0 0 50px #fff;
+}
+
+.cursor-outline {
+    width: 30px;
+    height: 30px;
+    border: 2px solid hsla(0, 0%, 100%, 0.5);
+    box-shadow: 0 0 50px #fff;
+}
+
+.cursor-dot,
+.cursor-outline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+    box-shadow: 0 0 50px rgb(0, 238, 255);
+}
+
+
+
+
+
+#show-or-hide {
+    background-color: transparent;
+    backdrop-filter: blur(50);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px white;
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    border: 1px solid rgba(0, 238, 255, 0.2);
+}
+
+
+.tiltcard {
+    width: 400px;
+    height: 600px;
+    background-color: transparent;
+    backdrop-filter: blur(50);
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 238, 255, 0.2);
+    display: none;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+
+.imagem {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.gato {
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 50%;
+    margin-top: 60px;
+    border: 2px solid white;
+    box-shadow: 5px 5px 5px 0 rgba(0, 238, 255, 0.2);
+}
+
+.gato:hover {
+    transform: scale(1.2);
+    z-index: 2;
+    transition: 200ms;
+}
+
+.nome
+ {
+    font-family: Poppins;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.phrase,
+.phrase2 {
+    font-family: Poppins;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.music {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Poppins;
+}
+
+.backbtn {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: rgb(0, 238, 255);
+}
+
+.backbtn i {
+    margin-top: 5px;
+    margin-left: 5px;
+    height: 40px;
+    width: 40px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    color: rgba(0, 238, 255, 0.2);
+    
+}
+
+.music audio {
+    display: none;
+}
+
+.music .lenght {
+    width: 250px;
+    height: 5px;
+    -webkit-appearance: none;
+    border-radius: 50px;
+    background: white;
+    margin-top: 10px;
+}
+
+.lenght::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: rgb(81, 178, 216);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid #eee
+}
+
+.controller {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.controller i {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+.music h2 {
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+.music p {
+    font-size: 15px;
+}
+
+
+.redes {
+    display: flex;
+    gap: 5px;
+}
+
+.instagram, .instagram i {
+    font-size: 50px;
+    color: white;
+}
+.spotify, .spotify i {
+    font-size: 50px;
+    color: white;
+}
+.steam, .steam i {
+    font-size: 50px;
+    color: white;
+}
+.github, .github i {
+    font-size: 50px;
+    color: white;
+}
+
+.instagram:hover, .instagram:hover i {
+    transition: 200ms;
+    color: rgba(0, 238, 255, 0.2);
+}
+
+.spotify:hover, .spotify:hover i {
+    transition: 200ms;
+    color: rgba(0, 238, 255, 0.2);
+}
+
+.steam:hover, .steam:hover i {
+    transition: 200ms;
+    color: rgba(0, 238, 255, 0.2);
+}
+
+.github:hover, .github:hover i {
+    transition: 200ms;
+    color: rgba(0, 238, 255, 0.2);
+}
+
